@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://leo01234.gitee.io/sitemap.xml
