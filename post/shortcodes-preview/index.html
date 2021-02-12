@@ -74,7 +74,7 @@ More details: https://gohugo.io/content-management/shortcodes/" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://leo01234.github.io/post/shortcodes-preview/" />
 <meta property="article:published_time" content="2018-03-04T16:01:23+08:00" />
-<meta property="article:modified_time" content="2018-03-05T16:01:23+08:00" />
+<meta property="article:modified_time" content="2021-02-10T18:33:56+08:00" />
 <meta itemprop="name" content="Shortcodes Preview">
 <meta itemprop="description" content="What a Shortcode is
 Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;iframes&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&rsquo;s syntax.
@@ -83,8 +83,8 @@ A shortcode is a simple snippet inside a content file that Hugo will render usin
 In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.
 More details: https://gohugo.io/content-management/shortcodes/">
 <meta itemprop="datePublished" content="2018-03-04T16:01:23+08:00" />
-<meta itemprop="dateModified" content="2018-03-05T16:01:23+08:00" />
-<meta itemprop="wordCount" content="405">
+<meta itemprop="dateModified" content="2021-02-10T18:33:56+08:00" />
+<meta itemprop="wordCount" content="409">
 
 
 
@@ -427,9 +427,14 @@ More details: https://gohugo.io/content-management/shortcodes/"/>
             <a href="https://leo01234.github.io/categories/index/"> index </a>
             
           </div>
-        
+        <span class="more-meta"> 约 409 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
 
         
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
         
 
         
@@ -789,8 +794,15 @@ More details: https://gohugo.io/content-management/shortcodes/"/>
 <!-- raw HTML omitted -->
 <h2 id="gist">gist</h2>
 <p>We can embed the gist in our content via username and gist ID pulled from the URL:</p>
-<pre><code>{{&lt; gist spf13 7896402 &gt;}}
-</code></pre><p>Display:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; gist spf13 7896402 &gt;}}
+</code></pre></td></tr></table>
+</div>
+</div><p>Display:</p>
 <script type="application/javascript" src="https://gist.github.com/spf13/7896402.js"></script>
 
 <h2 id="expand">expand</h2>
@@ -805,10 +817,19 @@ More details: https://gohugo.io/content-management/shortcodes/"/>
 
 <h3 id="usage">Usage</h3>
 <p>this shortcode takes exactly one optional parameter to define the text that appears next to the expand/collapse icon. (default is “Click to expand”)</p>
-<pre><code>{{&lt; expand &quot;Is this learn theme rocks ?&quot; &gt;}}
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; expand &#34;Is this learn theme rocks ?&#34; &gt;}}
 Yes !.
 {{&lt; /expand &gt;}}
-</code></pre><h2 id="youtube">youtube</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="youtube">youtube</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -839,7 +860,10 @@ Yes !.
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2018-03-05
+      2021-02-10
+      
+        
+        
       
     </span>
   </p>
@@ -896,6 +920,8 @@ Yes !.
     </footer>
   </article>
 
+  
+  
   
   
 
@@ -989,6 +1015,10 @@ Yes !.
 
   
   
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
 
   
 </div>
@@ -1035,6 +1065,8 @@ Yes !.
 
 
 
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
