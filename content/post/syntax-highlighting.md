@@ -1,27 +1,15 @@
 ---
 title: "Syntax Highlighting"
 date: 2011-08-30T16:01:23+08:00
-lastmod: 2017-08-30T16:01:23+08:00
+lastmod: 2018-11-05T16:01:23+08:00
 draft: false
 tags: ["preview", "Syntax Highlighting", "tag-5"]
-categories: ["Syntax Highlighting", "index"]
+categories: ["Syntax Highlighting"]
 
-# You can also close(false) or open(true) something for this content.
-# P.S. comment can only be closed
-# comment: false
 toc: false
-# You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
-# contentCopyright: false
-# reward: false
-# mathjax: false
 
-menu:
-  main:
-    parent: "docs"
-    weight: 4
 ---
 
-More detail: [Syntax Highlighting | Hugo](https://gohugo.io/content-management/syntax-highlighting/)
 
 ```js
 function helloWorld () {
@@ -58,10 +46,10 @@ int main(void){
 ```
 
 ```cpp
-// 'Hello World!' program
-
+// 'Hello World!' program 
+ 
 #include <iostream>
-
+ 
 int main(){
   std::cout << "Hello World!" << std::endl;
   return 0;
@@ -71,7 +59,7 @@ int main(){
 ```cs
 using System;
 class HelloWorld{
-  public static void Main(){
+  public static void Main(){ 
     System.Console.WriteLine("Hello, World!");
   }
 }
@@ -89,7 +77,7 @@ class HelloWorld{
 package main
 import fmt "fmt"
 
-func main()
+func main() 
 {
    fmt.Printf("Hello, World!\n");
 }
@@ -108,71 +96,78 @@ object HelloWorld with Application {
 ```
 
 ```python
-print("Hello, World!")
+print("Hello, World!") 
 ```
 
-## no named code block
-
-```
-## this is a comment
-$ echo this is a command
-this is a command
-
-## edit the file
-$vi foo.md
-+++
-date = "2014-09-28"
-title = "creating a new theme"
-+++
-
-bah and humbug
-:wq
-
-## show it
-$ cat foo.md
-+++
-date = "2014-09-28"
-title = "creating a new theme"
-+++
-
-bah and humbug
-$
+```clojure
+(defn hello-world
+  "A function print 'Hello world'."
+  []
+  (prn "Hello world"))
 ```
 
-
-## highlight shortcode
-
-example:
-
-```shortcode
-{{</* highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" */>}}
-// ... code
-{{</* /highlight */>}}
+```go-html-template
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ .Title }}</title>
+</head>
+<body>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</body>
+</html>
 ```
 
-result:
+```go-html-template
+{{ partial "header.html" . }}
 
-{{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
-// GetTitleFunc returns a func that can be used to transform a string to
-// title case.
-//
-// The supported styles are
-//
-// - "Go" (strings.Title)
-// - "AP" (see https://www.apstylebook.com/)
-// - "Chicago" (see http://www.chicagomanualofstyle.org/home.html)
-//
-// If an unknown or empty style is provided, AP style is what you get.
-func GetTitleFunc(style string) func(s string) string {
-  switch strings.ToLower(style) {
-  case "go":
-    return strings.Title
-  case "chicago":
-    tc := transform.NewTitleConverter(transform.ChicagoStyle)
-    return tc.Title
-  default:
-    tc := transform.NewTitleConverter(transform.APStyle)
-    return tc.Title
-  }
+  <h1>posts</h1>
+  {{ range first 10 .Data.Pages }}
+    {{ if eq .Type "post"}}
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ end }}
+  {{ end }}
+
+  <h1>pages</h1>
+  {{ range .Data.Pages }}
+    {{ if or (eq .Type "page") (eq .Type "about") }}
+      <h2><a href="{{ .Permalink }}">{{ .Type }} - {{ .Title }} - {{ .RelPermalink }}</a></h2>
+    {{ end }}
+  {{ end }}
+
+{{ partial "footer.html" . }}
+```
+
+---
+
+Detect the language
+
+```
+package hello
+
+fun main(args: Array<String>) {
+  println("Hello World!")
 }
-{{< /highlight >}}
+```
+
+```
+<?php
+  echo 'Hello, World!';
+?>
+```
+
+---
+
+By `{{</* highlight go-html-template "linenos=table,hl_lines=1 3-7,linenostart=199" */>}}..{{</* / highlight */>}}`
+
+{{< highlight go-html-template "linenos=table,hl_lines=1 3-7,linenostart=199" >}}
+<section id="main">
+  <div>
+   <h1 id="title">{{ .Title }}</h1>
+    {{ range .Data.Pages }}
+        {{ .Render "summary"}}
+    {{ end }}
+  </div>
+</section>
+{{< / highlight >}}
