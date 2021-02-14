@@ -543,7 +543,8 @@ c2(no)-&gt;op2-&gt;e
         repo: 'myBlog-comment',
         owner: 'Leo01234',
         admin: ['Leo01234'],
-        body: decodeURI(location.href)
+        body: decodeURI(location.href),
+        proxy: 'https:\/\/cors-anywhere.ijkhly.workers.dev\/https:\/\/github.com\/login\/oauth\/access_token'
       });
       gitalk.render('gitalk-container');
     </script>
