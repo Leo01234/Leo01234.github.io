@@ -1,0 +1,1 @@
+.\themes\even\layouts\partials\comments.html中gitalk创建时添加proxy参数（添加proxy...那一行）

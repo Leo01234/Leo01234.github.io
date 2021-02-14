@@ -150,6 +150,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     repo = "myBlog-comment"               # The repo to store comments
     clientId = "c68bdcabd4b232e6838e"           # Your client ID
     clientSecret = "8e755c77cb37c449720d69143387113e12c5f42f"       # Your client secret
+    proxy = "https://cors-anywhere.ijkhly.workers.dev/https://github.com/login/oauth/access_token"       # 自己加的
 
   # Valine.
   # You can get your appid and appkey from https://leancloud.cn
