@@ -37,6 +37,8 @@ flowchartDiagrams:
                 'request': {'fill': 'blue'}
               }
             }"
+
+hiddenFromHomePage: true
 ---
 
 ## Usage
