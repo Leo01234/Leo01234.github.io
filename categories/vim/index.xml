@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on Leo01234的博客</title>
+    <link>https://leo01234.github.io/categories/vim/</link>
+    <description>Recent content in Vim on Leo01234的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://leo01234.github.io/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>YouCompleteMe配置C&#43;&#43; include 头文件的搜索路径</title>
+      <link>https://leo01234.github.io/post/ycm-configure-cpp-include-search-path/</link>
+      <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo01234.github.io/post/ycm-configure-cpp-include-search-path/</guid>
+      <description>安装完YouCompleteMe发现不能补全C++头文件，原来是没有配置.ycm_extra_conf.py。根据官方文档的说法，只需要将示</description>
+    </item>
+    
+    <item>
+      <title>YouCompleteMe插件编译ycm_core库时找不到python3的库</title>
+      <link>https://leo01234.github.io/post/ycm-can-not-find-python3-libs/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo01234.github.io/post/ycm-can-not-find-python3-libs/</guid>
+      <description>在按照Full Installation Guide安装YouCompleteMe时，输入命令 1 cmake -G &amp;#34;Unix Makefiles&amp;#34; -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/pack/YouCompleteMe/start/YouCompleteMe/third_party/ycmd/cpp 提示 1 2 Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is at least version &amp;#34;2.7&amp;#34;) 添加-DPYTHON_</description>
+    </item>
+    
+  </channel>
+</rss>
