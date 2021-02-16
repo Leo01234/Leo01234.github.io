@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Leo01234的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 10 Jul 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://leo01234.gitee.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://leo01234.gitee.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Matlab</title>
+      <link>https://leo01234.gitee.io/categories/matlab/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo01234.gitee.io/categories/matlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://leo01234.gitee.io/categories/vim/</link>
+      <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo01234.gitee.io/categories/vim/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>示例</title>
       <link>https://leo01234.gitee.io/categories/%E7%A4%BA%E4%BE%8B/</link>

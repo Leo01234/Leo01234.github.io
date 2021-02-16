@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>第一篇博客 - Leo01234的博客</title>
+  <title>YouCompleteMe插件编译ycm_core库时找不到python3的库 - Leo01234的博客</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Leo01234" /><meta name="description" content="今天是除夕，把这个网站搞了个大概。 马上准备开始看春晚。" /><meta name="keywords" content="Leo01234, blog, 博客" />
+<meta name="author" content="Leo01234" /><meta name="description" content="在按照Full Installation Guide安装YouCompleteMe时，输入命令 1 cmake -G &amp;#34;Unix Makefiles&amp;#34; -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/pack/YouCompleteMe/start/YouCompleteMe/third_party/ycmd/cpp 提示 1 2 Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is at least version &amp;#34;2.7&amp;#34;) 添加-DPYTHON_" /><meta name="keywords" content="Leo01234, blog, 博客" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.80.0 with theme even" />
 
 
-<link rel="canonical" href="https://leo01234.gitee.io/post/first-post/" />
+<link rel="canonical" href="https://leo01234.gitee.io/post/ycm-can-not-find-python3-libs/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,24 +39,24 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="第一篇博客" />
-<meta property="og:description" content="今天是除夕，把这个网站搞了个大概。 马上准备开始看春晚。" />
+<meta property="og:title" content="YouCompleteMe插件编译ycm_core库时找不到python3的库" />
+<meta property="og:description" content="在按照Full Installation Guide安装YouCompleteMe时，输入命令 1 cmake -G &#34;Unix Makefiles&#34; -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/pack/YouCompleteMe/start/YouCompleteMe/third_party/ycmd/cpp 提示 1 2 Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is at least version &#34;2.7&#34;) 添加-DPYTHON_" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://leo01234.gitee.io/post/first-post/" />
-<meta property="article:published_time" content="2021-02-11T18:18:32+08:00" />
-<meta property="article:modified_time" content="2021-02-13T15:11:35+08:00" />
-<meta itemprop="name" content="第一篇博客">
-<meta itemprop="description" content="今天是除夕，把这个网站搞了个大概。 马上准备开始看春晚。">
-<meta itemprop="datePublished" content="2021-02-11T18:18:32+08:00" />
-<meta itemprop="dateModified" content="2021-02-13T15:11:35+08:00" />
-<meta itemprop="wordCount" content="27">
+<meta property="og:url" content="https://leo01234.gitee.io/post/ycm-can-not-find-python3-libs/" />
+<meta property="article:published_time" content="2020-01-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-16T15:23:27+08:00" />
+<meta itemprop="name" content="YouCompleteMe插件编译ycm_core库时找不到python3的库">
+<meta itemprop="description" content="在按照Full Installation Guide安装YouCompleteMe时，输入命令 1 cmake -G &#34;Unix Makefiles&#34; -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/pack/YouCompleteMe/start/YouCompleteMe/third_party/ycmd/cpp 提示 1 2 Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is at least version &#34;2.7&#34;) 添加-DPYTHON_">
+<meta itemprop="datePublished" content="2020-01-21T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-02-16T15:23:27+08:00" />
+<meta itemprop="wordCount" content="423">
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="Vim,插件,YouCompleteMe," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="第一篇博客"/>
-<meta name="twitter:description" content="今天是除夕，把这个网站搞了个大概。 马上准备开始看春晚。"/>
+<meta name="twitter:title" content="YouCompleteMe插件编译ycm_core库时找不到python3的库"/>
+<meta name="twitter:description" content="在按照Full Installation Guide安装YouCompleteMe时，输入命令 1 cmake -G &#34;Unix Makefiles&#34; -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/pack/YouCompleteMe/start/YouCompleteMe/third_party/ycmd/cpp 提示 1 2 Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is at least version &#34;2.7&#34;) 添加-DPYTHON_"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -133,12 +133,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">第一篇博客</h1>
+      <h1 class="post-title">YouCompleteMe插件编译ycm_core库时找不到python3的库</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2021-02-11 Thursday 18:18:32 &#43;08:00 </span>
-        
-          <span class="more-meta"> 约 27 字 </span>
+        <span class="post-time"> 2020-01-21 Tuesday 00:00:00 Z </span>
+        <div class="post-category">
+            <a href="/categories/vim/"> Vim </a>
+            </div>
+          <span class="more-meta"> 约 423 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -151,8 +153,82 @@
   </div>
 </div>
     <div class="post-content">
-      <p>今天是除夕，把这个网站搞了个大概。</p>
-<p>马上准备开始看春晚。</p>
+      <p>在按照<a href="https://github.com/ycm-core/YouCompleteMe#full-installation-guide">Full Installation Guide</a>安装YouCompleteMe时，输入命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">cmake -G <span class="s2">&#34;Unix Makefiles&#34;</span> -DUSE_SYSTEM_LIBCLANG<span class="o">=</span>ON . ~/.vim/pack/YouCompleteMe/start/YouCompleteMe/third_party/ycmd/cpp
+</code></pre></td></tr></table>
+</div>
+</div><p>提示</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-plaintext" data-lang="plaintext">Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS)
+  (Required is at least version &#34;2.7&#34;)
+</code></pre></td></tr></table>
+</div>
+</div><p>添加<code>-DPYTHON_INCLUDE_DIR=/usr/include/python3.7 -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.7m.so</code>明确指定python3库后，收获如下神奇的提示信息：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-plaintext" data-lang="plaintext">You set USE_PYTHON2 to make CMake find python2 libs only, but CMake found
+python3 libs instead.  Either don&#39;t set USE_PYTHON2 or install the
+necessary python2 headers &amp; libraries.
+</code></pre></td></tr></table>
+</div>
+</div><p>猜想可能是CMakeLists.txt中的问题，打开一看，果然
+CMakeLists.txt的一部分：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Note: build.py always explicitly sets this option, so the default used here</span>
+<span class="c1"># rarely matters.</span>
+option<span class="o">(</span> USE_PYTHON2 <span class="s2">&#34;If on, link to Python 2 instead of 3&#34;</span> ON <span class="o">)</span>
+
+<span class="k">if</span> <span class="o">(</span> USE_PYTHON2 <span class="o">)</span>
+  find_package<span class="o">(</span> PythonLibs 2.7 REQUIRED <span class="o">)</span>
+
+  <span class="k">if</span> <span class="o">(</span> NOT PYTHONLIBS_VERSION_STRING VERSION_LESS <span class="s2">&#34;3.0.0&#34;</span> <span class="o">)</span>
+    message<span class="o">(</span> FATAL_ERROR
+      <span class="s2">&#34;You set USE_PYTHON2 to make CMake find python2 libs only, but CMake &#34;</span>
+      <span class="s2">&#34;found python3 libs instead. Either don&#39;t set USE_PYTHON2 or install the &#34;</span>
+      <span class="s2">&#34;necessary python2 headers &amp; libraries.&#34;</span> <span class="o">)</span>
+  endif<span class="o">()</span>
+<span class="k">else</span><span class="o">()</span>
+  set<span class="o">(</span> Python_ADDITIONAL_VERSIONS 3.9 3.8 3.7 3.6 3.5 <span class="o">)</span>
+  find_package<span class="o">(</span> PythonLibs 3.5 REQUIRED <span class="o">)</span>  <span class="c1"># 3.5 is ONLY the mininum</span>
+endif<span class="o">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>将上面的ON改为OFF，就一切正常啦^_^，即可使用python3的库。</p>
 
     </div>
 
@@ -164,8 +240,8 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2021-02-13 Saturday 15:11:35 &#43;08:00
-        <a href="https://gitee.com/Leo01234/Leo01234/commit/de4e931fd35787b87e029bf52d4c74d9cb29b571" title="修改时间格式，删除lastmod">(de4e931)</a>
+        2021-02-16 Tuesday 15:23:27 &#43;08:00
+        <a href="https://gitee.com/Leo01234/Leo01234/commit/80e0908a358e3ad24ec7dfe5ec7258fe005e33db" title="添加旧的博客文章">(80e0908)</a>
     </span>
   </p>
   
@@ -175,15 +251,19 @@
   </p>
 </div>
 <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="/tags/vim/">Vim</a>
+          <a href="/tags/%E6%8F%92%E4%BB%B6/">插件</a>
+          <a href="/tags/youcompleteme/">YouCompleteMe</a>
+          </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/even-preview/">
+        <a class="prev" href="/post/ycm-configure-cpp-include-search-path/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Theme preview</span>
+            <span class="prev-text nav-default">YouCompleteMe配置C&#43;&#43; include 头文件的搜索路径</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/matlab-chinese-encoding/">
-            <span class="next-text nav-default">Matlab中文编码问题</span>
+        <a class="next" href="/post/hidden-post/">
+            <span class="next-text nav-default">This is a hidden post.</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -196,8 +276,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
       var gitalk = new Gitalk({
-        id: '2021-02-11 18:18:32 \u002b0800 CST',
-        title: '第一篇博客',
+        id: '2020-01-21 00:00:00 \u002b0000 UTC',
+        title: 'YouCompleteMe插件编译ycm_core库时找不到python3的库',
         clientID: '5fa241798045fb6efe76',
         clientSecret: 'b42897d13035a7792079c5accf27336175012f92',
         repo: 'myBlog-comment',
