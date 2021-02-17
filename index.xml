@@ -8,15 +8,6 @@
     <language>zh-cn</language>
     <lastBuildDate>Tue, 16 Feb 2021 16:33:42 +0800</lastBuildDate><atom:link href="https://leo01234.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Theme preview</title>
-      <link>https://leo01234.github.io/post/even-preview/</link>
-      <pubDate>Tue, 10 Jul 2018 00:00:00 +0800</pubDate>
-      
-      <guid>https://leo01234.github.io/post/even-preview/</guid>
-      <description>Based on MarkdownPreview test.md. Markdown 1 2 3 4 5 6 7 8 # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 ### Duplicate Header ### Duplicate Header H1 H2 H3 H4 H5 H6 Duplicate Header Duplicate Header Paragraphs 1 2 3 4 This is a paragraph. I am still part of the paragraph. New paragraph. This is a paragraph. I am still part of the paragraph.</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>https://leo01234.github.io/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
@@ -70,6 +61,15 @@ It makes use of a variety of open source projects including:
       
       <guid>https://leo01234.github.io/post/ycm-can-not-find-python3-libs/</guid>
       <description>在按照Full Installation Guide安装YouCompleteMe时，输入命令 1 cmake -G &amp;#34;Unix Makefiles&amp;#34; -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/pack/YouCompleteMe/start/YouCompleteMe/third_party/ycmd/cpp 提示 1 2 Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is at least version &amp;#34;2.7&amp;#34;) 添加-DPYTHON_</description>
+    </item>
+    
+    <item>
+      <title>Theme preview</title>
+      <link>https://leo01234.github.io/post/even-preview/</link>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/even-preview/</guid>
+      <description>Based on MarkdownPreview test.md. Markdown 1 2 3 4 5 6 7 8 # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 ### Duplicate Header ### Duplicate Header H1 H2 H3 H4 H5 H6 Duplicate Header Duplicate Header Paragraphs 1 2 3 4 This is a paragraph. I am still part of the paragraph. New paragraph. This is a paragraph. I am still part of the paragraph.</description>
     </item>
     
     <item>
