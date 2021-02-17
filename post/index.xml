@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Leo01234的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 11 Feb 2021 18:18:32 +0800</lastBuildDate><atom:link href="https://leo01234.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Feb 2021 16:33:42 +0800</lastBuildDate><atom:link href="https://leo01234.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theme preview</title>
       <link>https://leo01234.github.io/post/even-preview/</link>
@@ -14,6 +14,15 @@
       
       <guid>https://leo01234.github.io/post/even-preview/</guid>
       <description>Based on MarkdownPreview test.md. Markdown 1 2 3 4 5 6 7 8 # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 ### Duplicate Header ### Duplicate Header H1 H2 H3 H4 H5 H6 Duplicate Header Duplicate Header Paragraphs 1 2 3 4 This is a paragraph. I am still part of the paragraph. New paragraph. This is a paragraph. I am still part of the paragraph.</description>
+    </item>
+    
+    <item>
+      <title>使用 git 的 worktree 功能部署 Github Pages</title>
+      <link>https://leo01234.github.io/post/use-git-worktree-for-github-pages-deploying/</link>
+      <pubDate>Tue, 16 Feb 2021 16:33:42 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/use-git-worktree-for-github-pages-deploying/</guid>
+      <description>在github上部署github pages时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只</description>
     </item>
     
     <item>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Leo01234的博客</title>
+    <link>https://leo01234.github.io/categories/git/</link>
+    <description>Recent content in git on Leo01234的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 16 Feb 2021 16:33:42 +0800</lastBuildDate><atom:link href="https://leo01234.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 git 的 worktree 功能部署 Github Pages</title>
+      <link>https://leo01234.github.io/post/use-git-worktree-for-github-pages-deploying/</link>
+      <pubDate>Tue, 16 Feb 2021 16:33:42 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/use-git-worktree-for-github-pages-deploying/</guid>
+      <description>在github上部署github pages时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只</description>
+    </item>
+    
+  </channel>
+</rss>

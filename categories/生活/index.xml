@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生活 on Leo01234的博客</title>
+    <link>https://leo01234.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
+    <description>Recent content in 生活 on Leo01234的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 11 Feb 2021 18:18:32 +0800</lastBuildDate><atom:link href="https://leo01234.github.io/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一篇博客</title>
+      <link>https://leo01234.github.io/post/first-post/</link>
+      <pubDate>Thu, 11 Feb 2021 18:18:32 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/first-post/</guid>
+      <description>今天是除夕，把这个网站搞了个大概。 马上准备开始看春晚。</description>
+    </item>
+    
+  </channel>
+</rss>
