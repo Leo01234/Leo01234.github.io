@@ -6,7 +6,7 @@
     <description>Recent content on Leo01234的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 11 Feb 2021 18:18:32 +0800</lastBuildDate><atom:link href="https://leo01234.gitee.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Feb 2021 16:33:42 +0800</lastBuildDate><atom:link href="https://leo01234.gitee.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theme preview</title>
       <link>https://leo01234.gitee.io/post/even-preview/</link>
@@ -25,6 +25,15 @@
       <description>Hugo is a static site engine written in Go.
 It makes use of a variety of open source projects including:
  Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
+    </item>
+    
+    <item>
+      <title>使用 git 的 worktree 功能部署 Github Pages</title>
+      <link>https://leo01234.gitee.io/post/use-git-worktree-for-github-pages-deploying/</link>
+      <pubDate>Tue, 16 Feb 2021 16:33:42 +0800</pubDate>
+      
+      <guid>https://leo01234.gitee.io/post/use-git-worktree-for-github-pages-deploying/</guid>
+      <description>在github上部署github pages时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只</description>
     </item>
     
     <item>
