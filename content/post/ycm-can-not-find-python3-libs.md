@@ -4,7 +4,7 @@ date: 2020-01-21
 lastmod: 2020-01-21
 draft: false
 tags: ["Vim", "插件", "YouCompleteMe"]
-categories: ["Vim"]
+categories: ["学习", "Vim"]
 ---
 
 在按照[Full Installation Guide](https://github.com/ycm-core/YouCompleteMe#full-installation-guide)安装YouCompleteMe时，输入命令

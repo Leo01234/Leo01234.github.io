@@ -4,7 +4,7 @@ date: 2020-01-22
 lastmod: 2020-01-22
 draft: false
 tags: ["Vim", "插件", "YouCompleteMe"]
-categories: ["Vim"]
+categories: ["学习", "Vim"]
 ---
 
 安装完`YouCompleteMe`发现不能补全C++头文件，原来是没有配置`.ycm_extra_conf.py`。根据官方文档的说法，只需要将示例的配置文件改一改`flags`的值就可以了。可是`'-isystem'`后需要接include头文件的搜索路径,这个东西在哪找呢？
