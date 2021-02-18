@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Leo01234的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 Feb 2021 16:33:42 +0800</lastBuildDate><atom:link href="https://leo01234.gitee.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 12:19:59 +0800</lastBuildDate><atom:link href="https://leo01234.gitee.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JsOrrery</title>
+      <link>https://leo01234.gitee.io/post/jsorrery/</link>
+      <pubDate>Thu, 18 Feb 2021 12:19:59 +0800</pubDate>
+      
+      <guid>https://leo01234.gitee.io/post/jsorrery/</guid>
+      <description>JsOrrery是一个用JavaScript和WebGL写的太阳系模拟程序。 演示网址：https://mgvez.github.io/jso</description>
+    </item>
+    
     <item>
       <title>使用 git 的 worktree 功能部署 Github Pages</title>
       <link>https://leo01234.gitee.io/post/use-git-worktree-for-github-pages-deploying/</link>
