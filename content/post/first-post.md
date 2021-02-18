@@ -2,7 +2,7 @@
 title: "第一篇博客"
 date: 2021-02-11T18:18:32+08:00
 draft: false
-tags: []
+tags: ["除夕", "春晚"]
 categories: ["生活"]
 ---
 
