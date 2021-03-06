@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>蓝屏 on Leo01234的博客</title>
+    <link>https://leo01234.github.io/tags/%E8%93%9D%E5%B1%8F/</link>
+    <description>Recent content in 蓝屏 on Leo01234的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 06 Mar 2021 16:11:44 +0800</lastBuildDate><atom:link href="https://leo01234.github.io/tags/%E8%93%9D%E5%B1%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>电脑开机蓝屏</title>
+      <link>https://leo01234.github.io/post/computer-startup-blue-screen/</link>
+      <pubDate>Sat, 06 Mar 2021 16:11:44 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/computer-startup-blue-screen/</guid>
+      <description>舍友电脑忽然蓝屏了，具体表现为开机没多久直接蓝屏，报错显示为whea-internal-error。 尝试了许多方法，未果 ，寻病终（大雾） 。 后</description>
+    </item>
+    
+  </channel>
+</rss>
