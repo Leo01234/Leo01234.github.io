@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>使用 git 的 worktree 功能部署 Github Pages - Leo01234的博客</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Leo01234" /><meta name="description" content="在github上部署github pages时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只" /><meta name="keywords" content="Leo01234, blog, 博客" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.109.0 with theme even" />
+
+
+<link rel="canonical" href="https://leo01234.github.io/post/use-git-worktree-for-github-pages-deploying/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+<meta property="og:title" content="使用 git 的 worktree 功能部署 Github Pages" />
+<meta property="og:description" content="在github上部署github pages时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://leo01234.github.io/post/use-git-worktree-for-github-pages-deploying/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-02-16T16:33:42+08:00" />
+<meta property="article:modified_time" content="2021-02-16T16:33:42+08:00" />
+<meta itemprop="name" content="使用 git 的 worktree 功能部署 Github Pages">
+<meta itemprop="description" content="在github上部署github pages时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只"><meta itemprop="datePublished" content="2021-02-16T16:33:42+08:00" />
+<meta itemprop="dateModified" content="2021-02-16T16:33:42+08:00" />
+<meta itemprop="wordCount" content="1267">
+<meta itemprop="keywords" content="git,worktree,github pages,gitee pages,hugo," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 git 的 worktree 功能部署 Github Pages"/>
+<meta name="twitter:description" content="在github上部署github pages时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Leo01234的博客</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Leo01234的博客</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">使用 git 的 worktree 功能部署 Github Pages</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-02-16 Tuesday 16:33:42 &#43;08:00 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
+            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/"> 计算机技术 </a>
+            </div>
+          <span class="more-meta"> 约 1267 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git-worktree">git worktree</a></li>
+        <li><a href="#用来部署-github-pages">用来部署 github pages</a></li>
+        <li><a href="#优点">优点</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>在<code>github</code>上部署<code>github pages</code>时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只有两个选项：根目录(<code>/</code>)，或<code>/docs</code>文件夹。</p>
+<figure><img src="github-pages-deploy.png"/><figcaption>
+            <h4>文件夹只有两个选项</h4>
+        </figcaption>
+</figure>
+<p>这就带来了几个问题：</p>
+<ul>
+<li>很多静态网站生成器（比如<code>hugo</code>)默认以<code>/public</code>文件夹为网站生成目录，此时就只能在配置中强行更改生成目录为<code>/docs</code></li>
+<li><code>/docs</code>本身语义不明。有些项目将自身的说明文档放在<code>/docs</code>，并且有另外的展示<code>page</code>，此时就冲突了</li>
+<li>最重要的一点，此时网站的源代码和生成的内容在同一个分支中，结构较为臃肿，不方便维护</li>
+</ul>
+<p>此时就可以用到<code>git</code>的<code>worktree</code>功能，将源代码和生成的内容放在两个不同的分支中。</p>
+<h2 id="git-worktree">git worktree</h2>
+<p>官方文档：</p>
+<blockquote>
+<p>描述：</p>
+<p>管理多个<strong>附到同一个仓库的</strong>工作树(working tree)。</p>
+<p>一个<code>git</code>仓库可以支持多个工作树，使你可以同时检出多个分支。<code>git worktree add</code>添加一个新的<strong>与此仓库关联的</strong>工作树。与使用<code>git init</code>或<code>git clone</code>创建的<code>主工作树</code>(main working tree)不同，这个新的工作树叫做<code>关联工作树</code>(linked working tree)。一个仓库有一个主工作树（如果不是裸的仓库），和零个或多个关联工作树。当你用完了关联工作树后，使用<code>git worktree remove</code>移除它。</p>
+</blockquote>
+<p><del>自己翻译的，若有问题。。。不对，我翻译的怎么可能有问题！😎</del></p>
+<p>个人理解是，<code>git worktree add</code>后，在原仓库之外的其他目录创建了一个和原仓库几乎一模一样的仓库，在新的仓库里几乎可以做所有原仓库可以做的事。和重新<code>clone</code>一个原仓库不一样的是，在<em>新的仓库</em>里所做的改动会自动同步到原仓库中，整个过程都是在本地完成，不涉及到远端。其实仔细观察新的<code>worktree</code>的目录也可以发现，在这里<code>.git</code>不是目录，而是文件，里面只有一个到原仓库的链接。</p>
+<p><code>git worktree</code>的具体语法参见<a href="https://git-scm.com/docs/git-worktree">官方文档</a>。</p>
+<h2 id="用来部署-github-pages">用来部署 github pages</h2>
+<p>这个功能是为同时检出多个分支设计的，而我们这里需要源代码和生成的网站同时存在不同的分支中，正好适合。</p>
+<p>假设现在网站源代码在<code>git</code>仓库的<code>main</code>分支中。那么</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git worktree add &lt;到新的工作树的路径&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这会在指定位置创建一个工作树，且在<code>main</code>分支的当前位置新建一个以<code>&lt;到新的工作树的路径&gt;的最后一级目录名</code>命名的分支（若原先没有的话），并在新的工作树中检出它。</p>
+<p>这个<code>&lt;到新的工作树的路径&gt;</code>可以在原仓库目录外，也可以在原仓库目录内。不过如果在目录内的话需要在仓库的<code>.gitignore</code>文件里加上新工作树的目录。在这里，静态网站生成器通常将生成的内容放在同一目录下的文件夹内，就采用在目录内的方式。</p>
+<p>现在，只需要</p>
+<ol>
+<li>和原来一样在新建的工作树的文件夹内生成网站（例：<code>hugo</code>命令）</li>
+<li><code>cd</code>到此文件夹内</li>
+<li><code>git add .</code>和<code>git commit</code></li>
+</ol>
+<p>这样就可以在两个分支上分别拥有源代码和生成的网站了。之后将两个分支都推送到<code>github</code>，设置里选择<em>拥有生成的网站的分支</em>进行部署。</p>
+<h2 id="优点">优点</h2>
+<ul>
+<li>源代码和生成的内容分开</li>
+<li>生成的网站也拥有提交历史，可以回滚</li>
+</ul>
+<h2 id="参考">参考</h2>
+<p><a href="https://musteresel.github.io/posts/2018/01/git-worktree-for-deploying.html">Using git worktree for deploying to GitHub Pages – musteresel&rsquo;s blog</a></p>
+<p><a href="https://stackoverflow.com/questions/36782467/set-subdirectory-as-website-root-on-github-pages">git - Set subdirectory as website root on Github Pages - Stack Overflow</a></p>
+<p><a href="https://gist.github.com/cobyism/4730490">Deploy to `gh-pages` from a `dist` folder on the master branch. Useful for use with [yeoman](http://yeoman.io).</a></p>
+<p><a href="https://git-scm.com/docs/git-worktree">Git - git-worktree Documentation</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Leo01234</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-02-16 Tuesday 16:33:42 &#43;08:00
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/git/">git</a>
+          <a href="/tags/worktree/">worktree</a>
+          <a href="/tags/github-pages/">github pages</a>
+          <a href="/tags/gitee-pages/">gitee pages</a>
+          <a href="/tags/hugo/">hugo</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/jsorrery/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">JsOrrery</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/first-post/">
+            <span class="next-text nav-default">第一篇博客</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:ijkhly@126.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/Leo01234/" class="iconfont icon-github" title="github"></a>
+  <a href="https://leo01234.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Leo01234</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/Leo01234/live2d-widget@v1.0.3/autoload.js"></script>
+
+</body>
+</html>

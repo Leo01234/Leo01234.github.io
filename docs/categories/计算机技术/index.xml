@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>计算机技术 on Leo01234的博客</title>
+    <link>https://leo01234.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 计算机技术 on Leo01234的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 06 Mar 2021 16:30:19 +0800</lastBuildDate><atom:link href="https://leo01234.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QQ 群接龙打不开</title>
+      <link>https://leo01234.github.io/post/qq-qun-jie-long-can-not-open/</link>
+      <pubDate>Sat, 06 Mar 2021 16:30:19 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/qq-qun-jie-long-can-not-open/</guid>
+      <description>最近QQ群接龙经常打不开。经检验不是网络问题。 解决办法：到应用设置里强制停止QQ，再打开，就好了。个人猜测可能是个bug。</description>
+    </item>
+    
+    <item>
+      <title>电脑开机蓝屏</title>
+      <link>https://leo01234.github.io/post/computer-startup-blue-screen/</link>
+      <pubDate>Sat, 06 Mar 2021 16:11:44 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/computer-startup-blue-screen/</guid>
+      <description>舍友电脑忽然蓝屏了，具体表现为开机没多久直接蓝屏，报错显示为whea-internal-error。 尝试了许多方法，未果 ，寻病终（大雾） 。 后</description>
+    </item>
+    
+    <item>
+      <title>JsOrrery</title>
+      <link>https://leo01234.github.io/post/jsorrery/</link>
+      <pubDate>Thu, 18 Feb 2021 12:19:59 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/jsorrery/</guid>
+      <description>JsOrrery是一个用JavaScript和WebGL写的太阳系模拟程序。 演示网址：https://mgvez.github.io/jso</description>
+    </item>
+    
+    <item>
+      <title>使用 git 的 worktree 功能部署 Github Pages</title>
+      <link>https://leo01234.github.io/post/use-git-worktree-for-github-pages-deploying/</link>
+      <pubDate>Tue, 16 Feb 2021 16:33:42 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/use-git-worktree-for-github-pages-deploying/</guid>
+      <description>在github上部署github pages时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只</description>
+    </item>
+    
+    <item>
+      <title>Matlab中文编码问题</title>
+      <link>https://leo01234.github.io/post/matlab-chinese-encoding/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo01234.github.io/post/matlab-chinese-encoding/</guid>
+      <description>内置编辑器中文内容保存后再打开变为乱码/问号(?) 画图时中文标题显示为乱码/问号(?) 系统环境 Matlab R2019b Windows 10 系统语言是英文 现象 原本写的时候是这样：</description>
+    </item>
+    
+    <item>
+      <title>YouCompleteMe配置C&#43;&#43; include 头文件的搜索路径</title>
+      <link>https://leo01234.github.io/post/ycm-configure-cpp-include-search-path/</link>
+      <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo01234.github.io/post/ycm-configure-cpp-include-search-path/</guid>
+      <description>安装完YouCompleteMe发现不能补全C++头文件，原来是没有配置.ycm_extra_conf.py。根据官方文档的说法，只需要将示</description>
+    </item>
+    
+    <item>
+      <title>YouCompleteMe插件编译ycm_core库时找不到python3的库</title>
+      <link>https://leo01234.github.io/post/ycm-can-not-find-python3-libs/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo01234.github.io/post/ycm-can-not-find-python3-libs/</guid>
+      <description>在按照Full Installation Guide安装YouCompleteMe时，输入命令 1 cmake -G &amp;#34;Unix Makefiles&amp;#34; -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/pack/YouCompleteMe/start/YouCompleteMe/third_party/ycmd/cpp 提示 1 2 Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is at least version &amp;#34;2.7&amp;#34;) 添加-DPYTHON_</description>
+    </item>
+    
+  </channel>
+</rss>

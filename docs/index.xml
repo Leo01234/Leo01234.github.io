@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leo01234的博客</title>
+    <link>https://leo01234.github.io/</link>
+    <description>Recent content on Leo01234的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 06 Mar 2021 16:30:19 +0800</lastBuildDate><atom:link href="https://leo01234.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://leo01234.github.io/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/about/</guid>
+      <description>Hugo is a static site engine written in Go.
+It makes use of a variety of open source projects including:
+Cobra Viper J Walter Weatherman Cast Learn more and contribute on GitHub.</description>
+    </item>
+    
+    <item>
+      <title>QQ 群接龙打不开</title>
+      <link>https://leo01234.github.io/post/qq-qun-jie-long-can-not-open/</link>
+      <pubDate>Sat, 06 Mar 2021 16:30:19 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/qq-qun-jie-long-can-not-open/</guid>
+      <description>最近QQ群接龙经常打不开。经检验不是网络问题。 解决办法：到应用设置里强制停止QQ，再打开，就好了。个人猜测可能是个bug。</description>
+    </item>
+    
+    <item>
+      <title>电脑开机蓝屏</title>
+      <link>https://leo01234.github.io/post/computer-startup-blue-screen/</link>
+      <pubDate>Sat, 06 Mar 2021 16:11:44 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/computer-startup-blue-screen/</guid>
+      <description>舍友电脑忽然蓝屏了，具体表现为开机没多久直接蓝屏，报错显示为whea-internal-error。 尝试了许多方法，未果 ，寻病终（大雾） 。 后</description>
+    </item>
+    
+    <item>
+      <title>守望先锋 语音频道没声音</title>
+      <link>https://leo01234.github.io/post/overwatch-voice-channel-no-sound/</link>
+      <pubDate>Sat, 06 Mar 2021 15:30:15 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/overwatch-voice-channel-no-sound/</guid>
+      <description>守望玩了也有一阵子了，但是从来没有听到过其他人发的语音。有时会看到游戏左上角显示有声音图标，显然是有人在讲话，但却听不到任何声音。一直也没有</description>
+    </item>
+    
+    <item>
+      <title>JsOrrery</title>
+      <link>https://leo01234.github.io/post/jsorrery/</link>
+      <pubDate>Thu, 18 Feb 2021 12:19:59 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/jsorrery/</guid>
+      <description>JsOrrery是一个用JavaScript和WebGL写的太阳系模拟程序。 演示网址：https://mgvez.github.io/jso</description>
+    </item>
+    
+    <item>
+      <title>使用 git 的 worktree 功能部署 Github Pages</title>
+      <link>https://leo01234.github.io/post/use-git-worktree-for-github-pages-deploying/</link>
+      <pubDate>Tue, 16 Feb 2021 16:33:42 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/use-git-worktree-for-github-pages-deploying/</guid>
+      <description>在github上部署github pages时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只</description>
+    </item>
+    
+    <item>
+      <title>第一篇博客</title>
+      <link>https://leo01234.github.io/post/first-post/</link>
+      <pubDate>Thu, 11 Feb 2021 18:18:32 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/first-post/</guid>
+      <description>今天是除夕，把这个网站搞了个大概。 马上准备开始看春晚。</description>
+    </item>
+    
+    <item>
+      <title>Matlab中文编码问题</title>
+      <link>https://leo01234.github.io/post/matlab-chinese-encoding/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo01234.github.io/post/matlab-chinese-encoding/</guid>
+      <description>内置编辑器中文内容保存后再打开变为乱码/问号(?) 画图时中文标题显示为乱码/问号(?) 系统环境 Matlab R2019b Windows 10 系统语言是英文 现象 原本写的时候是这样：</description>
+    </item>
+    
+    <item>
+      <title>YouCompleteMe配置C&#43;&#43; include 头文件的搜索路径</title>
+      <link>https://leo01234.github.io/post/ycm-configure-cpp-include-search-path/</link>
+      <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo01234.github.io/post/ycm-configure-cpp-include-search-path/</guid>
+      <description>安装完YouCompleteMe发现不能补全C++头文件，原来是没有配置.ycm_extra_conf.py。根据官方文档的说法，只需要将示</description>
+    </item>
+    
+    <item>
+      <title>YouCompleteMe插件编译ycm_core库时找不到python3的库</title>
+      <link>https://leo01234.github.io/post/ycm-can-not-find-python3-libs/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo01234.github.io/post/ycm-can-not-find-python3-libs/</guid>
+      <description>在按照Full Installation Guide安装YouCompleteMe时，输入命令 1 cmake -G &amp;#34;Unix Makefiles&amp;#34; -DUSE_SYSTEM_LIBCLANG=ON . ~/.vim/pack/YouCompleteMe/start/YouCompleteMe/third_party/ycmd/cpp 提示 1 2 Could NOT find PythonLibs (missing: PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is at least version &amp;#34;2.7&amp;#34;) 添加-DPYTHON_</description>
+    </item>
+    
+    <item>
+      <title>Theme preview</title>
+      <link>https://leo01234.github.io/post/even-preview/</link>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/even-preview/</guid>
+      <description>Based on MarkdownPreview test.md. Markdown 1 2 3 4 5 6 7 8 # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 ### Duplicate Header ### Duplicate Header H1 H2 H3 H4 H5 H6 Duplicate Header Duplicate Header Paragraphs 1 2 3 4 This is a paragraph. I am still part of the paragraph. New paragraph. This is a paragraph. I am still part of the paragraph.</description>
+    </item>
+    
+    <item>
+      <title>This is a hidden post.</title>
+      <link>https://leo01234.github.io/post/hidden-post/</link>
+      <pubDate>Thu, 08 Mar 2018 17:40:19 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/hidden-post/</guid>
+      <description>&lt;p&gt;This post is hidden from the home page.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[English] Creating a New Theme</title>
+      <link>https://leo01234.github.io/post/english-preview/</link>
+      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/english-preview/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme. We&amp;rsquo;ll start with creating a new site with</description>
+    </item>
+    
+    <item>
+      <title>[日本語] 敬語体系</title>
+      <link>https://leo01234.github.io/post/japanese-preview/</link>
+      <pubDate>Wed, 30 Aug 2017 01:53:34 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/japanese-preview/</guid>
+      <description>日本語の敬語体系は、一般に、大きく尊敬語・謙譲語・丁寧語に分類される。文化審議会国語分科会は、2007年2月に「敬語の指針」を答申し、これに</description>
+    </item>
+    
+    <item>
+      <title>[中文] 《长恨歌》</title>
+      <link>https://leo01234.github.io/post/chinese-preview/</link>
+      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/chinese-preview/</guid>
+      <description>《长恨歌》是中国唐朝诗人白居易的一首长篇叙事诗。 第一段：贵妃受宠爱 汉皇重色思倾国，御宇多年求不得。杨家有女初长成，养在深闺人未识。 天生丽质难</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>https://leo01234.github.io/post/shortcodes/</link>
+      <pubDate>Tue, 30 Aug 2016 16:01:23 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/shortcodes/</guid>
+      <description>&lt;h1 id=&#34;admonition&#34;&gt;Admonition&lt;/h1&gt;
+&lt;div class=&#34;admonition note&#34;&gt;&lt;p class=&#34;admonition-title&#34;&gt;I&amp;#39;m title!&lt;/p&gt;
+&lt;p&gt;biu biu biu.&lt;/p&gt;
+&lt;details class=&#34;admonition note&#34;&gt;&lt;summary class=&#34;admonition-title&#34;&gt;note&lt;/summary&gt;
+  &lt;p&gt;biu biu biu.&lt;/p&gt;
+&lt;/details&gt;
+&lt;div class=&#34;admonition example&#34;&gt;
+  &lt;p&gt;Without title.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% admonition note &amp;#34;I&amp;#39;m title!&amp;#34; false %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;biu biu biu.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% admonition type=&amp;#34;note&amp;#34; title=&amp;#34;note&amp;#34; details=&amp;#34;true&amp;#34; %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;biu biu biu.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% /admonition %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% admonition example %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Without title.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% /admonition %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% /admonition %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS Flowchart Diagrams</title>
+      <link>https://leo01234.github.io/post/js-flowchart-diagrams/</link>
+      <pubDate>Wed, 04 Mar 2015 21:57:50 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/js-flowchart-diagrams/</guid>
+      <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;st=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;e=&amp;gt;end: End:&amp;gt;http://www.google.com
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;op1=&amp;gt;operation: My Operation|past
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;op2=&amp;gt;operation: Stuff|current
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sub1=&amp;gt;subroutine: My Subroutine|invalid
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cond=&amp;gt;condition: Yes
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;or No?|approved:&amp;gt;http://www.google.com
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;c2=&amp;gt;condition: Good idea|rejected
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;io=&amp;gt;inputoutput: catch something...|request
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;st-&amp;gt;op1(right)-&amp;gt;cond
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cond(yes, right)-&amp;gt;c2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cond(no)-&amp;gt;sub1(left)-&amp;gt;op1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;c2(yes)-&amp;gt;io-&amp;gt;e
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;c2(no)-&amp;gt;op2-&amp;gt;e
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS Sequence Diagrams</title>
+      <link>https://leo01234.github.io/post/js-sequence-diagrams/</link>
+      <pubDate>Wed, 04 Mar 2015 21:57:45 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/js-sequence-diagrams/</guid>
+      <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Andrew-&amp;gt;China: Says Hello
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Note right of China: China thinks\nabout it
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;China--&amp;gt;Andrew: How are you?
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Andrew-&amp;gt;&amp;gt;China: I am good thanks!
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>https://leo01234.github.io/post/syntax-highlighting/</link>
+      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/syntax-highlighting/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloWorld&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;alert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

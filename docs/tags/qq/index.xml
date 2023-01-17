@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QQ on Leo01234的博客</title>
+    <link>https://leo01234.github.io/tags/qq/</link>
+    <description>Recent content in QQ on Leo01234的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 06 Mar 2021 16:30:19 +0800</lastBuildDate><atom:link href="https://leo01234.github.io/tags/qq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QQ 群接龙打不开</title>
+      <link>https://leo01234.github.io/post/qq-qun-jie-long-can-not-open/</link>
+      <pubDate>Sat, 06 Mar 2021 16:30:19 +0800</pubDate>
+      
+      <guid>https://leo01234.github.io/post/qq-qun-jie-long-can-not-open/</guid>
+      <description>最近QQ群接龙经常打不开。经检验不是网络问题。 解决办法：到应用设置里强制停止QQ，再打开，就好了。个人猜测可能是个bug。</description>
+    </item>
+    
+  </channel>
+</rss>
