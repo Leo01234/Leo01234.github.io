@@ -5,3 +5,4 @@
         
 - ~~.\themes\even\layouts\partials\head.html中 custom css 后面加上 font-awesome 的 css 引用~~
 - ~~.\themes\even\layouts\partials\scripts.html中 custom js 后面加上 live2d-widget 的 js 引用~~
+- .\themes\even\layouts\partials\post\copyright.html中去掉git提交hash显示
