@@ -6,7 +6,7 @@ draft: false
 tags: ["考研", "感受"]
 categories: ["生活"]
 
-toc: true
+toc: false
 autoCollapseToc: true
 
 hiddenFromHomePage: false
