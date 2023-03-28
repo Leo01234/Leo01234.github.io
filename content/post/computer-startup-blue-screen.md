@@ -3,7 +3,7 @@ title: "电脑开机蓝屏"
 date: 2021-03-06T16:11:44+08:00
 draft: false
 tags: ["开机", "蓝屏", "鼠标", "whea"]
-categories: ["生活", "计算机技术"]
+categories: ["生活"]
 ---
 
 舍友电脑忽然蓝屏了，具体表现为开机没多久直接蓝屏，报错显示为`whea-internal-error`。

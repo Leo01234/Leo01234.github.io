@@ -3,8 +3,8 @@ title: "Matlab中文编码问题"
 date: 2020-03-23
 lastmod: 2020-03-23
 draft: false
-tags: ["Matlab", "中文", "编码", "乱码"]
-categories: ["学习", "计算机技术"]
+tags: ["matlab", "中文", "编码", "乱码"]
+categories: ["学习"]
 ---
 
 内置编辑器中文内容保存后再打开变为乱码/问号(?)

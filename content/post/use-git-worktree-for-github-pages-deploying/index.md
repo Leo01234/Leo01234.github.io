@@ -3,7 +3,7 @@ title: "使用 git 的 worktree 功能部署 Github Pages"
 date: 2021-02-16T16:33:42+08:00
 draft: false
 tags: ["git", "worktree", "github pages", "gitee pages", "hugo"]
-categories: ["学习", "计算机技术"]
+categories: ["学习"]
 ---
 
 在`github`上部署`github pages`时，有两个选项：部署的内容所在的分支，和分支中的哪个文件夹。然而，分支可以选任意的分支，文件夹却只有两个选项：根目录(`/`)，或`/docs`文件夹。

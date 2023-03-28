@@ -3,7 +3,7 @@ title: "QQ 群接龙打不开"
 date: 2021-03-06T16:30:19+08:00
 draft: false
 tags: ["QQ", "群接龙", "打不开"]
-categories: ["生活", "计算机技术"]
+categories: ["生活"]
 ---
 
 最近`QQ`群接龙经常打不开。经检验不是网络问题。
