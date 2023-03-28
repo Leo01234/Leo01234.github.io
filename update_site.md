@@ -1,5 +1,6 @@
 ## 添加新文章
 .\hugo.exe new post/***.md
+.\hugo.exe new --kind post-bundle post/***
 
 ## 更新gitpage
 1. 删除docs文件夹
