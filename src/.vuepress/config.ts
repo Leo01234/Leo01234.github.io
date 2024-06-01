@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
+import { viteBundler } from "@vuepress/bundler-vite"
 
 export default defineUserConfig({
   base: "/",
@@ -12,4 +13,13 @@ export default defineUserConfig({
 
   // Enable it with pwa
   // shouldPrefetch: false,
+
+  bundler: viteBundler({
+    viteOptions: {
+      server: {
+        host: "localhost" // dev服务器只监听localhost
+      }
+    },
+    // vuePluginOptions: {},
+  }),
 });
