@@ -1,3 +1,7 @@
+## hugo版本
+.\hugo.exe version
+hugo v0.109.0-47b12b83e636224e5e601813ff3e6790c191e371+extended windows/amd64 BuildDate=2022-12-23T10:38:11Z VendorInfo=gohugoio
+
 ## 添加新文章
 .\hugo.exe new post/***.md
 .\hugo.exe new --kind post-bundle post/***
