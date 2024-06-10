@@ -107,6 +107,9 @@ export default hopeTheme({
   // 字体图标资源链接
   iconAssets: "fontawesome-with-brands",
 
+  // 禁用深色模式
+  darkmode: "disable",
+
   // metaLocales: {
   //   editLink: "Edit this page on GitHub",
   // },

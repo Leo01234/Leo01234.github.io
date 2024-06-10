@@ -7,4 +7,3 @@ Blog for Github pages
 
 - [x] 添加LICENSE
 - [ ] 主页编写
-- [ ] 添加最近编辑时间
