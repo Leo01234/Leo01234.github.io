@@ -3,85 +3,113 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
 
+  // === 主题基本选项 ===
+
+  // 当前网站部署到的域名
+  hostname: "https://leo01234.github.io",
+
+  // 文章显示的默认作者
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Leo01234",
+    url: "https://leo01234.github.io",
+    email: "ijkhly@126.com",
   },
 
-  iconAssets: "fontawesome-with-brands",
-
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-
-  docsDir: "src",
-
-  // navbar
-  navbar,
-
-  // sidebar
-  sidebar,
-
-  footer: "Default footer",
-
-  displayFooter: true,
-
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
-
-  blog: {
-    description: "A FrontEnd programmer",
-    intro: "/intro.html",
-    medias: {
-      Baidu: "https://example.com",
-      BiliBili: "https://example.com",
-      Bitbucket: "https://example.com",
-      Dingding: "https://example.com",
-      Discord: "https://example.com",
-      Dribbble: "https://example.com",
-      Email: "mailto:info@example.com",
-      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-      Flipboard: "https://example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
-      Gitlab: "https://example.com",
-      Gmail: "mailto:info@example.com",
-      Instagram: "https://example.com",
-      Lark: "https://example.com",
-      Lines: "https://example.com",
-      Linkedin: "https://example.com",
-      Pinterest: "https://example.com",
-      Pocket: "https://example.com",
-      QQ: "https://example.com",
-      Qzone: "https://example.com",
-      Reddit: "https://example.com",
-      Rss: "https://example.com",
-      Steam: "https://example.com",
-      Twitter: "https://example.com",
-      Wechat: "https://example.com",
-      Weibo: "https://example.com",
-      Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
-      Zhihu: "https://example.com",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
-    },
-  },
-
-  metaLocales: {
-    editLink: "Edit this page on GitHub",
-  },
+  favicon: "/favicon.ico",
 
   // enable it to preview all changes in time
-  // hotReload: true,
+  hotReload: true,
+
+  // === 主题功能选项 ===
+
+  blog: {
+    description: "软件工程专业在读",
+    intro: "/about.md",
+    medias: {
+      // Baidu: "https://example.com",
+      // BiliBili: "https://example.com",
+      // Bitbucket: "https://example.com",
+      // Dingding: "https://example.com",
+      // Discord: "https://example.com",
+      // Dribbble: "https://example.com",
+      Email: "mailto:ijkhly@126.com",
+      // Evernote: "https://example.com",
+      // Facebook: "https://example.com",
+      // Flipboard: "https://example.com",
+      // Gitee: "https://example.com",
+      GitHub: "https://github.com/Leo01234",
+      // Gitlab: "https://example.com",
+      // Gmail: "mailto:info@example.com",
+      // Instagram: "https://example.com",
+      // Lark: "https://example.com",
+      // Lines: "https://example.com",
+      // Linkedin: "https://example.com",
+      // Pinterest: "https://example.com",
+      // Pocket: "https://example.com",
+      // QQ: "https://example.com",
+      // Qzone: "https://example.com",
+      // Reddit: "https://example.com",
+      // Rss: "https://example.com",
+      // Steam: "https://example.com",
+      // Twitter: "https://example.com",
+      // Wechat: "https://example.com",
+      // Weibo: "https://example.com",
+      // Whatsapp: "https://example.com",
+      // Youtube: "https://example.com",
+      // Zhihu: "https://example.com",
+      // VuePressThemeHope: {
+      //   icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+      //   link: "https://theme-hope.vuejs.press",
+      // },
+    },
+    // 时间轴的顶部文字
+    timeline: "未来",
+  },
+
+  // encrypt: {
+  //   config: {
+  //     "/demo/encrypt.html": ["1234"],
+  //   },
+  // },
+
+  // === 主题布局选项 ===
+  // 导航栏
+  navbar,
+
+  // 导航栏图标
+  logo: "/logo.svg",
+
+  // 仓库配置，用于在导航栏中显示仓库链接
+  repo: "Leo01234/Leo01234.github.io",
+
+  // 侧边栏
+  sidebar,
+
+  // 结构(structure)侧边栏排序器
+  // 添加 date-desc，按日期降序排序
+  sidebarSorter: ["readme", "order", "date-desc", "title", "filename"],
+
+  // 文档所在分支
+  docsBranch: "main",
+  // 文档在仓库中的目录
+  docsDir: "src",
+
+  // 页脚的默认内容，可输入 HTMLString
+  footer: '主题使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> | <a href="https://leo01234.github.io/about.html">关于网站</a>',
+  // 默认的版权信息，同样也支持 HTMLString
+  copyright: '许可协议：<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>，Copyright © Leo01234',
+  // 是否默认显示页脚
+  displayFooter: true,
+
+  // === 主题基本选项 ===
+
+  // 字体图标资源链接
+  iconAssets: "fontawesome-with-brands",
+
+  // metaLocales: {
+  //   editLink: "Edit this page on GitHub",
+  // },
 
   plugins: {
     blog: true,
@@ -100,6 +128,8 @@ export default hopeTheme({
 
     // These features are enabled for demo, only preserve features you need here
     mdEnhance: {
+      // 启用 GFM 警告
+      alert: true,
       align: true,
       attrs: true,
       codetabs: true,

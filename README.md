@@ -5,4 +5,6 @@ Blog for Github pages
 
 ## TODO
 
-- [ ] 添加LICENSE
+- [x] 添加LICENSE
+- [ ] 主页编写
+- [ ] 添加最近编辑时间
