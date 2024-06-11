@@ -4,8 +4,10 @@ icon: pen-to-square
 # date:
 # category:
 # tag:
-# star: true
 # sticky: true
+# star: true
+article: false
+timeline: false
 # cover: /assets/images/cover3.jpg
 
 index: false
