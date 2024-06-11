@@ -6,4 +6,4 @@ Blog for Github pages
 ## TODO
 
 - [x] 添加LICENSE
-- [ ] 主页编写
+- [x] 主页编写
