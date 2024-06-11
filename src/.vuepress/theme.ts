@@ -145,24 +145,24 @@ export default hopeTheme({
       mark: true,
       plantuml: true,
       spoiler: true,
-      stylize: [
-        {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
-      ],
+      // stylize: [
+      //   {
+      //     matcher: "Recommended",
+      //     replacer: ({ tag }) => {
+      //       if (tag === "em")
+      //         return {
+      //           tag: "Badge",
+      //           attrs: { type: "tip" },
+      //           content: "Recommended",
+      //         };
+      //     },
+      //   },
+      // ],
       sub: true,
       sup: true,
       tabs: true,
       tasklist: true,
-      vPre: true,
+      // vPre: true,
 
       // install chart.js before enabling it
       // chart: true,
