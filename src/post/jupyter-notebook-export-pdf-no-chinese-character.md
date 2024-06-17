@@ -26,3 +26,9 @@ tag:
 ```
 
 最后将 `.tex` 文件编译为 pdf 即可。
+
+## 参考资料
+
+[LaTeX中文不显示解决方法_latex为啥文字显示不出来-CSDN博客](https://blog.csdn.net/qq_40472064/article/details/105864226)
+
+[解决MacOS中Jupyter Notebook通过Latex导出PDF中文无法显示的问题 - 路上](https://lushang.me/archives/221/)
