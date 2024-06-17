@@ -19,14 +19,14 @@ star: true
 ## `.mkv` 转 `.mp4`
 
 ```powershell
-ffmpeg -i .\a.mkv -c copy .\a.mp4
+ffmpeg -i .\inputVideo.mkv -c copy .\outputVideo.mp4
 ```
 
 ## 压缩视频文件大小
 
 ```powershell
 # 下面的 -fs 参数用于控制文件大小，-fs 10M 就是让文件不要超过10M
-ffmpeg -i .\a.mkv -fs 10M .\a.mp4
+ffmpeg -i .\inputVideo.mkv -fs 10M .\outputVideo.mp4
 ```
 
 ## 裁剪视频
@@ -34,7 +34,7 @@ ffmpeg -i .\a.mkv -fs 10M .\a.mp4
 流复制方式
 
 ```powershell
-ffmpeg -ss 00:10:00.0 -to 00:20:00.0 -i .\inputVideo.mp4 -c copy .\outputVideo.mp4
+ffmpeg -i .\inputVideo.mp4 -ss 00:10:00.0 -to 00:20:00.0 -c copy .\outputVideo.mp4
 ```
 
 | 选项 | 解释     |
