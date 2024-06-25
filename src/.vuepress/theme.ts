@@ -67,11 +67,11 @@ export default hopeTheme({
     timeline: "未来",
   },
 
-  // encrypt: {
-  //   config: {
-  //     "/demo/encrypt.html": ["1234"],
-  //   },
-  // },
+  encrypt: {
+    config: {
+      "/post/some-personal-thoughts.html": ["zhijiu"],
+    },
+  },
 
   // === 主题布局选项 ===
   // 导航栏

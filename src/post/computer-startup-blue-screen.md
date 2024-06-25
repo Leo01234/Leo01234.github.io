@@ -1,7 +1,7 @@
 ---
 title: 电脑开机蓝屏
 # icon: circle-info
-date: 2021-03-06 16:11:44
+date: 2021-03-06T16:11:44+08:00
 category:
   - 生活
 tag:

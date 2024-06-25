@@ -1,7 +1,7 @@
 ---
 title: "使用 git 的 worktree 功能部署 Github Pages"
 # icon: circle-info
-date: 2021-02-16 16:33:42
+date: 2021-02-16T16:33:42+08:00
 category:
   - 学习
 tag:

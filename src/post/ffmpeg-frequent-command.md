@@ -1,7 +1,7 @@
 ---
 title: FFmpeg 常用命令（备忘）
 # icon: circle-info
-date: 2024-06-17 20:40:23
+date: 2024-06-17T20:40:23+08:00
 category:
   - 学习
 tag:

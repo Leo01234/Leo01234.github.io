@@ -1,7 +1,7 @@
 ---
 title: Jupyter Notebook 导出 pdf 中文显示为空白的问题
 # icon: circle-info
-date: 2024-06-17 20:06:38
+date: 2024-06-17T20:06:38+08:00
 category:
   - 学习
 tag:
