@@ -96,7 +96,7 @@ export default hopeTheme({
   docsDir: "src",
 
   // 页脚的默认内容，可输入 HTMLString
-  footer: '主题使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> | <a href="https://leo01234.github.io/about.html">关于网站</a>',
+  footer: '主题使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> | <a href="/about.html">关于网站</a>',
   // 默认的版权信息，同样也支持 HTMLString
   copyright: '许可协议：<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>，Copyright © Leo01234',
   // 是否默认显示页脚
