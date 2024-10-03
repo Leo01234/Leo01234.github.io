@@ -132,15 +132,10 @@ export default hopeTheme({
     // These features are enabled for demo, only preserve features you need here
     mdEnhance: {
       // 启用 GFM 警告
-      alert: true,
       align: true,
       attrs: true,
-      codetabs: true,
       component: true,
       demo: true,
-      figure: true,
-      imgLazyload: true,
-      imgSize: true,
       include: true,
       mark: true,
       plantuml: true,
@@ -160,7 +155,6 @@ export default hopeTheme({
       // ],
       sub: true,
       sup: true,
-      tabs: true,
       tasklist: true,
       // vPre: true,
 
@@ -178,22 +172,11 @@ export default hopeTheme({
       // gfm requires mathjax-full to provide tex support
       // gfm: true,
 
-      // install katex before enabling it
-      // katex: true,
-
-      // install mathjax-full before enabling it
-      // mathjax: true,
-
       // install mermaid before enabling it
       // mermaid: true,
 
       // playground: {
       //   presets: ["ts", "vue"],
-      // },
-
-      // install reveal.js before enabling it
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
       // },
 
       // install @vue/repl before enabling it
@@ -202,6 +185,31 @@ export default hopeTheme({
       // install sandpack-vue3 before enabling it
       // sandpack: true,
     },
+
+    // === 从 mdEnhance 移出的选项 ===
+
+    markdownImage: {
+      size: true,
+      lazyload: true,
+      figure: true,
+    },
+
+    markdownHint: {
+      alert: true,
+    },
+
+    // (可能需要?) install katex before enabling it
+    // (可能需要?) install mathjax-full before enabling it
+    // markdownMath: true,
+
+    markdownTab: true,
+
+    // install reveal.js before enabling it
+    // revealjs: {
+    //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+    // },
+
+    // =============================
 
     // install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
