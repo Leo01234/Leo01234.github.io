@@ -2,7 +2,12 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/post/",
+  // "/post/",
+  {
+    text: "时间轴",
+    link: "/timeline/",
+    icon: "clock",
+  },
   "/about.md",
   // "/demo/",
   // {

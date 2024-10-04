@@ -1,10 +1,11 @@
 import { sidebar } from "vuepress-theme-hope";
 
-export default sidebar({
-  "/post/": "structure",
+export default sidebar(false);
+// export default sidebar({
+  // "/post/": "structure",
 
   // fallback
-  "/": "structure",
+  // "/": "structure",
   // "/": [
   //   "",
   //   {
@@ -33,4 +34,4 @@ export default sidebar({
     //   link: "https://plugin-md-enhance.vuejs.press/guide/content/revealjs/demo.html",
     // },
   // ],
-});
+// });
