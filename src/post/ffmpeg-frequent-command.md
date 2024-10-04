@@ -25,9 +25,21 @@ ffmpeg -i .\inputVideo.mkv -c copy .\outputVideo.mp4
 ## 压缩视频文件大小
 
 ```powershell
+ffmpeg -i .\inputVideo.mp4 -crf 29 -preset slower .\outputVideo.mp4
+```
+
+参考：[How to compress output video with trim using FFMPEG - Super User](https://superuser.com/questions/1582867/how-to-compress-output-video-with-trim-using-ffmpeg)
+
+::: warning 不要使用 -fs
+
+```powershell
 # 下面的 -fs 参数用于控制文件大小，-fs 10M 就是让文件不要超过10M
 ffmpeg -i .\inputVideo.mkv -fs 10M .\outputVideo.mp4
 ```
+
+`-fs` 会使视频不全（时长被裁剪）。
+
+:::
 
 ## 裁剪视频
 
