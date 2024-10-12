@@ -1,1 +1,8 @@
 // place your custom styles here
+
+// https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues/4497
+// [Bug]博客文章摘要中，代码块与行号重合
+// 临时修复
+.vp-article-excerpt div[class*=language-] pre {
+  margin-left: var(--code-line-number-width);
+}
